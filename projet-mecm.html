@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet : Déploiement Automatisé MECM/PSAUM - Amine Fakhri</title>
+    <style>
+        /* --- RESET ET BASE --- */
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background-color: #f4f7f6; color: #333; line-height: 1.6; }
+        
+        /* --- CONTAINER PRINCIPAL --- */
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            background: white;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        /* --- HEADER DU PROJET --- */
+        .project-header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+        .project-header h1 { margin-bottom: 10px; font-size: 2.2rem; }
+        .project-header p { font-size: 1.1rem; opacity: 0.9; }
+        
+        /* --- TAGS (Compétences) --- */
+        .tags {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+        .tag {
+            background: rgba(255,255,255,0.2);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            border: 1px solid rgba(255,255,255,0.4);
+        }
+
+        /* --- CONTENU --- */
+        .content { padding: 40px; }
+        
+        h2 { color: #1e3c72; border-bottom: 2px solid #eee; padding-bottom: 10px; margin-bottom: 20px; margin-top: 30px; }
+        h2:first-of-type { margin-top: 0; }
+
+        .context-box {
+            background-color: #eef2f5;
+            border-left: 5px solid #1e3c72;
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 4px;
+        }
+
+        /* --- ÉTAPES (TIMELINE) --- */
+        .steps-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+        .step-card {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            transition: transform 0.3s ease;
+        }
+        .step-card:hover { transform: translateY(-5px); box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+        .step-number {
+            background: #1e3c72; color: white; width: 30px; height: 30px;
+            border-radius: 50%; display: flex; align-items: center; justify-content: center;
+            font-weight: bold; margin-bottom: 15px;
+        }
+        .step-title { font-weight: bold; margin-bottom: 10px; display: block; color: #2a5298; }
+
+        /* --- GALERIE IMAGES --- */
+        .gallery {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        .img-placeholder {
+            background-color: #ddd;
+            height: 250px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+            font-weight: bold;
+            border: 2px dashed #bbb;
+            overflow: hidden; /* Pour que l'image ne dépasse pas */
+        }
+        .img-placeholder img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* ou 'contain' si tu veux voir toute l'image */
+        }
+
+        /* --- COMPÉTENCES VALIDÉES (Grille E5) --- */
+        .skills-validated {
+            margin-top: 40px;
+            background: #f9fff9;
+            border: 1px solid #c3e6cb;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        .skills-validated h3 { color: #155724; margin-bottom: 10px; font-size: 1.1rem; }
+        .skills-list { list-style: none; }
+        .skills-list li { margin-bottom: 5px; padding-left: 20px; position: relative; color: #155724; }
+        .skills-list li::before { content: "✔"; position: absolute; left: 0; color: green; font-weight: bold; }
+
+        /* --- BOUTON RETOUR --- */
+        .btn-back {
+            display: inline-block;
+            margin-top: 30px;
+            text-decoration: none;
+            color: #1e3c72;
+            font-weight: bold;
+        }
+        .btn-back:hover { text-decoration: underline; }
+
+        /* MOBILE */
+        @media (max-width: 768px) {
+            .gallery { grid-template-columns: 1fr; }
+            .project-header { padding: 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header class="project-header">
+            <h1>Mise à disposition de services</h1>
+            <p>Gestion de parc & Déploiement automatisé (MECM/PSAUM)</p>
+            <div class="tags">
+                <span class="tag">Windows 11</span>
+                <span class="tag">MECM / SCCM</span>
+                <span class="tag">PSAUM</span>
+                <span class="tag">Active Directory</span>
+                <span class="tag">SISR</span>
+            </div>
+        </header>
+
+        <div class="content">
+            
+            <h2>Contexte & Enjeux</h2>
+            <div class="context-box">
+                <p><strong>Environnement :</strong> Ministère des Armées (CNAD) - Haute Sécurité.</p>
+                <p>Dans un contexte de restriction forte, les utilisateurs ne peuvent installer aucun logiciel eux-mêmes. Mon rôle est d'assurer la <strong>mise à disposition d'environnements logiciels fonctionnels</strong> et sécurisés, notamment lors de demandes spécifiques ou de la migration vers Windows 11.</p>
+            </div>
+
+            <h2>Méthodologie de Résolution</h2>
+            <div class="steps-container">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <span class="step-title">Vérification & Droits</span>
+                    <p>Contrôle de l'identité de l'utilisateur et de ses habilitations dans l'<strong>Active Directory</strong>. Ajout aux groupes de sécurité correspondants pour autoriser la descente applicative.</p>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <span class="step-title">Déploiement (PSAUM)</span>
+                    <p>Utilisation de la console <strong>MECM/PSAUM</strong>. Identification de la machine cible et "Push" du paquet logiciel ou de la Séquence de Tâches (TSQ).</p>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <span class="step-title">Diagnostic & Remédiation</span>
+                    <p>En cas d'échec (Monitoring Rouge) : Analyse des fichiers de <strong>Logs</strong> (Client SCCM) pour identifier l'erreur (Service arrêté, Cache plein) et relance du déploiement.</p>
+                </div>
+            </div>
+
+            <h2>Environnement Technique</h2>
+            <p style="margin-bottom: 15px; color: #666;">Aperçu des outils utilisés quotidiennement pour la gestion du parc.</p>
+            <div class="gallery">
+                <div class="img-placeholder">
+                    <img src="images/MECM.JPEG" alt="Capture Console MECM">
+                </div>
+                <div class="img-placeholder">
+                    <img src="images/PSAUM.JPEG" alt="Capture Outil PSAUM">
+                </div>
+            </div>
+
+            <div class="skills-validated">
+                <h3>Compétences BTS SIO Validées (E5)</h3>
+                <ul class="skills-list">
+                    <li>Gérer le patrimoine informatique (Gestion des habilitations).</li>
+                    <li>Mettre à disposition des utilisateurs un service informatique.</li>
+                    <li>Répondre aux incidents et aux demandes d'assistance.</li>
+                    <li>Traiter des demandes concernant les applications.</li>
+                </ul>
+            </div>
+
+            <a href="index.html" class="btn-back">← Retour au Portfolio</a>
+        </div>
+    </div>
+
+</body>
+</html>
