@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veille Technologique | Amine Fakhri</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+       </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">Amine<span>.</span>Fakhri</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Retour au Portfolio</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="watch-hero">
+        <span class="badge" style="background-color: #0ea5e9; color: #fff; padding: 4px 12px; border-radius: 9999px; font-size: 0.85rem; font-weight: 600;">Démarche Personnelle</span>
+        <h1 style="font-size: 2.3rem; margin-top: 15px; font-weight: 700;">Veille Technologique</h1>
+        <p style="color: var(--text-muted); max-width: 750px; margin: 15px auto 0; font-size: 1.1rem;">
+            Ma méthodologie d'apprentissage continu et d'automatisation de l'information en dehors des heures de cours et d'entreprise.
+        </p>
+    </section>
+
+    <main class="content-section" style="max-width: 900px; margin: 0 auto; padding: 40px 20px;">
+        <a href="index.html" style="color: var(--primary-color); text-decoration: none; font-weight: 600;">← Retour au portfolio</a>
+
+        <h2 style="margin-top: 30px; color: var(--text-color); font-size: 1.6rem;">L'Architecture de ma Veille (Flux RSS)</h2>
+        <p style="color: var(--text-muted); margin-bottom: 20px;">
+            Afin de centraliser l'information sans subir les algorithmes des réseaux sociaux, j'ai mis en place un système de collecte passive reposant entièrement sur les <strong>Flux RSS</strong>. Cela me permet, sur mon temps libre, de consulter l'actualité technique brute depuis une seule et unique interface (via un agrégateur comme Feedly).
+        </p>
+
+        <div class="method-box">
+            <h3>Pourquoi le choix des Flux RSS ?</h3>
+            <p style="color: var(--text-color); line-height: 1.6; margin-bottom: 10px;">
+                Contrairement à la recherche active (méthode "Pull" classique) qui demande un effort de navigation quotidien, l'utilisation de flux RSS (méthode "Push" automatisée) garantit qu'aucune mise à jour critique de sécurité ou de version logicielle ne m'échappe.
+            </p>
+            <p style="color: var(--text-color); line-height: 1.6;">
+                Cela me permet d'organiser mes lectures par catégories (Sécurité, Systèmes, Communautés) et de dédier des créneaux hebdomadaires spécifiques à mon auto-formation.
+            </p>
+        </div>
+
+        <h2 style="margin-top: 40px; color: var(--text-color); font-size: 1.6rem;">Mes Catégories et Sources de Référence</h2>
+        
+        <div class="watch-grid">
+            <div class="watch-card">
+                <h3> Institutionnel & Alertes Cybersécurité</h3>
+                <p>Suivi critique des vulnérabilités, correctifs logiciels immédiats et rapports de menaces.</p>
+                <ul class="source-list">
+                    <li><strong>Flux RSS du CERT-FR (ANSSI) :</strong> Avis de sécurité officiels et alertes de vulnérabilités majeures (Zéro-Days).</li>
+                    <li><strong>Cybermalveillance.gouv.fr :</strong> Analyse des tendances de menaces cyber et guides de remédiation grand public.</li>
+                </ul>
+            </div>
+
+            <div class="watch-card">
+                <h3> Écosystème Systèmes & Administration</h3>
+                <p>Suivi des cycles de vie des systèmes d'exploitation, des nouveautés de déploiement et d'automatisation.</p>
+                <ul class="source-list">
+                    <li><strong>Microsoft Tech Community :</strong> Articles de blogs d'ingénieurs sur les mises à jour Windows Enterprise, Active Directory et la suite Configuration Manager (MECM).</li>
+                    <li><strong>IT-Connect :</strong> Tutoriels, architectures systèmes et scripts d'administration (PowerShell/Linux).</li>
+                </ul>
+            </div>
+
+            <div class="watch-card">
+                <h3> Communautaire & Retours d'Expérience</h3>
+                <p>Échanges informels entre professionnels pour identifier les bogues de production récents provoqués par des mises à jour.</p>
+                <ul class="source-list">
+                    <li><strong>Reddit (r/sysadmin & r/cybersecurity) :</strong> Retours d'expérience directs de la communauté internationale sur l'application de correctifs et la résolution de pannes d'infrastructure.</li>
+                </ul>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Amine Fakhri. Option SISR - Projet de Veille Automatisée.</p>
+    </footer>
+
+</body>
+</html>

@@ -6,15 +6,6 @@
     <title>Ma Formation | H3 Campus & BTS SIO SISR</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <style>
-        .school-hero { padding: 100px 5% 60px; text-align: center; background: var(--bg-secondary); }
-        .content-section { max-width: 900px; margin: 0 auto; padding: 60px 5%; line-height: 1.8; }
-        .grid-info { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 40px; }
-        .info-card { background: #1e1e1e; padding: 25px; border-radius: 12px; border: 1px solid #333; }
-        .info-card h3 { color: #007bff; margin-bottom: 15px; }
-        .back-link { margin-bottom: 20px; display: inline-block; color: #007bff; text-decoration: none; font-weight: 600; }
-        @media (max-width: 768px) { .grid-info { grid-template-columns: 1fr; } }
-    </style>
 </head>
 <body>
 
@@ -34,9 +25,9 @@
     </section>
 
     <main class="content-section">
-        <a href="index.html" class="back-link">← Retour au portfolio</a>
+        <a href="index.html" style="color: var(--primary-color); text-decoration: none; font-weight: 600;">← Retour au portfolio</a>
         
-        <h2>À propos de H3 Campus</h2>
+        <h2 style="margin-top: 30px; color: var(--text-color);">À propos de H3 Campus</h2>
         <p>
             Situé en région parisienne, <strong>H3 Campus</strong> est un établissement reconnu pour son accompagnement de proximité et sa pédagogie axée sur le monde professionnel. L'école met un point d'honneur à former des techniciens opérationnels immédiatement grâce à un rythme d'alternance soutenu.
         </p>
@@ -45,7 +36,7 @@
             <div class="info-card">
                 <h3>Le BTS SIO (Option SISR)</h3>
                 <p>Le Brevet de Technicien Supérieur en <strong>Services Informatiques aux Organisations</strong>, option SISR (Solutions d'Infrastructure, Systèmes et Réseaux), me permet d'acquérir des compétences solides en :</p>
-                <ul style="margin-left: 20px; margin-top: 10px;">
+                <ul style="margin-left: 20px; margin-top: 10px; list-style-type: square; color: var(--text-muted);">
                     <li>Administration des systèmes Linux et Windows</li>
                     <li>Configuration de réseaux (Cisco, VLANs, Routage)</li>
                     <li>Sécurité informatique et cybersécurité</li>
@@ -58,13 +49,13 @@
             </div>
         </div>
 
-        <h2 style="margin-top: 60px;">Pourquoi ce choix ?</h2>
+        <h2 style="margin-top: 40px; color: var(--text-color);">Pourquoi ce choix ?</h2>
         <p>
             Le choix de SISR s'est imposé naturellement par mon intérêt pour l'aspect "fondation" de l'informatique. Comprendre comment les données circulent, comment sécuriser un serveur et comment automatiser des déploiements complexes (via PowerShell ou Scripting) sont les piliers de mon projet professionnel.
         </p>
 
         <div style="text-align: center; margin-top: 50px;">
-            <a href="https://www.h3campus.fr/" target="_blank" class="btn btn-outline">Visiter le site de l'école</a>
+            <a href="https://www.h3campus.fr/" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Visiter le site de l'école</a>
         </div>
     </main>
 
